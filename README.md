@@ -21,13 +21,13 @@ Open the terminal and type node calculator.js
 Then the next three inputs need to be what you wish to calculate.
 
 ```
-node calculator.js number1 (* / + or -) number2
+node calculator.js number1 "('*', '/', '+' or '-')" number2
 ```
 
 in example what you would type for 20 / 5 is
 
 ```
-node calculator.js 20 / 5
+node calculator.js 20 "/" 5
 ```
 
 then it should provide the answer (output) of
@@ -39,6 +39,8 @@ then it should provide the answer (output) of
 - [What is process.argv](https://stackoverflow.com/questions/4351521/how-do-i-pass-command-line-arguments-to-a-node-js-program-and-receive-them)
 
 - [Teacher's example (Ashlyn Knox)](https://github.com/sait-wbdv/calculator-activity/blob/main/app.js)
+
+- used [perplexity ai](https://www.perplexity.ai) to solve very SPECIFIC issues
 
 ## final thoughts as a project
 
