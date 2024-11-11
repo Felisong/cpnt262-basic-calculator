@@ -40,7 +40,7 @@ then it should provide the answer (output) of
 
 - [Teacher's example (Ashlyn Knox)](https://github.com/sait-wbdv/calculator-activity/blob/main/app.js)
 
-- used [perplexity ai](https://www.perplexity.ai) to solve very SPECIFIC issues
+- used [perplexity ai](https://www.perplexity.ai) to ask why 2 operators weren't working without quotes.
 
 ## final thoughts as a project
 
