@@ -42,6 +42,8 @@ then it should provide the answer (output) of
 
 - used [perplexity ai](https://www.perplexity.ai) to ask why 2 operators weren't working without quotes.
 
+- my mom for helping me conceptualize the flow chart of this project
+
 ## final thoughts as a project
 
 TBA but getting started was really hard but as soon as I figured out what process.argv was I had an idea on how to implement and starting thinking from there.
