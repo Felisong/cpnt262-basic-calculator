@@ -12,7 +12,7 @@ numOne = parseFloat(numOne);
 numTwo = parseFloat(numTwo);
 
 // object declaration
-const whichOperation = {
+const arithmetics = {
   "*": multiply(),
   "/": divide(),
   "+": sum(),
