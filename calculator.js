@@ -1,5 +1,6 @@
-// Variables at the top
 // VARIABLES
+const commandArr = process.argv.splice(2);
+console.log(commandArr);
 
 // something to convert the variables into floats
 

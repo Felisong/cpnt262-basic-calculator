@@ -35,10 +35,11 @@ then it should provide the answer (output) of
 
 ## attributions
 
+- [Mdn Web Docs](https://developer.mozilla.org/en-US/)
 - [What is process.argv](https://stackoverflow.com/questions/4351521/how-do-i-pass-command-line-arguments-to-a-node-js-program-and-receive-them)
 
 - [Teacher's example (Ashlyn Knox)](https://github.com/sait-wbdv/calculator-activity/blob/main/app.js)
 
-```
+## final thoughts as a project
 
-```
+TBA but getting started was really hard but as soon as I figured out what process.argv was I had an idea on how to implement and starting thinking from there.
