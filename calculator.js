@@ -18,56 +18,48 @@ const arithmetics = {
 numOne = parseFloat(numOne);
 numTwo = parseFloat(numTwo);
 
+if (commandArr.length !== 3) {
+  console.error(
+    "Please use this structure: node app.js <num1> <operator> <num2>"
+  );
+  process.exit(1);
+}
+
 try {
   if (isNaN(numOne) || isNaN(numTwo)) {
     throw new Error("One is not a valid number, please try again!");
   }
-  console.log(`type of: ` + typeof numTwo);
-  // calculator in here
-  // is the operator a valid supportedOperator?
+  // console.log(`type of: ` + typeof numTwo);
 
   if (!supportedOperators.includes(operator)) {
-    throw new Error(
-      ("Operator not a valid operator. Please use " / ", ") * ", " + " or " - ""
-    );
+    throw new Error(`Operator not valid. Please use "/", "*", "+" or "-".`);
   }
   // which operator is it?
-  if (operator === "/") {
-    arithmetics["/"];
-  }
-  if (operator === "*") {
-    arithmetics["*"];
-  }
-  if (operator === "+") {
-    arithmetics["+"];
-  }
-  if (operator === "-") {
-    arithmetics["-"];
-  } else console.log(result);
+  result = arithmetics[operator](numOne, numTwo);
+  // answer according to operator
+  console.log(`answer: ${result}`);
 } catch (error) {
-  console.error(error.message);
+  console.error(`test` + error.message);
 }
 
 //
 // ARITHMETIC FUNCTIONS
-function multiply() {
-  result = numOne * numTwo;
+function multiply(num1, num2) {
+  result = num1 * num2;
   return result;
 }
-function divide() {
-  if (numOne == 0 || numTwo == 0) {
+function divide(num1, num2) {
+  if (num1 == 0 || num2 == 0) {
     return "cannot divide by zero";
   }
-  result = numOne / numTwo;
+  result = num1 / num2;
   return result;
 }
-function sum() {
-  result = numOne + numTwo;
+function sum(num1, num2) {
+  result = num1 + num2;
   return result;
 }
-function subtract() {
-  result = numOne - numTwo;
+function subtract(num1, num2) {
+  result = num1 - num2;
   return result;
 }
-
-// work on getting the numbers to be valid, probably an issue with parsing or the try and catch.
