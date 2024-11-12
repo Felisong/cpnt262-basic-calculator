@@ -41,8 +41,10 @@ then it should provide the answer (output) of
 - [Teacher's example (Ashlyn Knox)](https://github.com/sait-wbdv/calculator-activity/blob/main/app.js)
 
 - used [perplexity ai](https://www.perplexity.ai) to ask why 2 operators weren't working without quotes.
+  As well as when I was about finished but had a very specific issue, I learned how to call the object for line ' ' (result = arithmetics[operator]();)
 
-- my mom for helping me conceptualize the flow chart of this project
+- my mom for helping me conceptualize the flow chart of this project.
+- my classmate Gabriel for troubleshooting with me.
 
 ## final thoughts as a project
 

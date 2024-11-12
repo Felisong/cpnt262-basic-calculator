@@ -17,6 +17,7 @@ const arithmetics = {
 };
 numOne = parseFloat(numOne);
 numTwo = parseFloat(numTwo);
+console.log(`numOne: ${numOne}, operator: ${operator}, numTwo: ${numTwo}`);
 
 if (commandArr.length !== 3) {
   console.error(
@@ -38,8 +39,9 @@ try {
   result = arithmetics[operator](numOne, numTwo);
   // answer according to operator
   console.log(`answer: ${result}`);
+  // meow
 } catch (error) {
-  console.error(`test` + error.message);
+  console.error(error.message);
 }
 
 //
