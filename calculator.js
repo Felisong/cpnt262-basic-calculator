@@ -10,37 +10,42 @@ let result;
 
 // functions object
 const arithmetics = {
-  "*": multiply,
   "/": divide,
+  "*": multiply,
   "+": sum,
   "-": subtract,
 };
 numOne = parseFloat(numOne);
 numTwo = parseFloat(numTwo);
 
-console.log(`test type:` + typeof numOne);
 try {
   if (isNaN(numOne) || isNaN(numTwo)) {
     throw new Error("One is not a valid number, please try again!");
   }
-  // convert number to float
-
+  console.log(`type of: ` + typeof numTwo);
   // calculator in here
-
   // is the operator a valid supportedOperator?
-  // if else should work.
-  if (operator !== supportedOperators) {
-    return `not a supported operator, please use "+", "-", "/" or "*".`;
+
+  if (!supportedOperators.includes(operator)) {
+    throw new Error(
+      ("Operator not a valid operator. Please use " / ", ") * ", " + " or " - ""
+    );
   }
-  {
-    // which operator is it?
-    // is operator === "*"
-    // pull from object.["*"]
-    //  console.log answer
-    //repeat steps depending on operator
+  // which operator is it?
+  if (operator === "/") {
+    arithmetics["/"];
   }
+  if (operator === "*") {
+    arithmetics["*"];
+  }
+  if (operator === "+") {
+    arithmetics["+"];
+  }
+  if (operator === "-") {
+    arithmetics["-"];
+  } else console.log(result);
 } catch (error) {
-  console.error("Both inputs were not a valid number, please try again!");
+  console.error(error.message);
 }
 
 //
