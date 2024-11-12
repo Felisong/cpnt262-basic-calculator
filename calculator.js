@@ -17,7 +17,8 @@ const arithmetics = {
 };
 numOne = parseFloat(numOne);
 numTwo = parseFloat(numTwo);
-console.log(`numOne: ${numOne}, operator: ${operator}, numTwo: ${numTwo}`);
+
+// console.log(`numOne: ${numOne}, operator: ${operator}, numTwo: ${numTwo}`);
 
 if (commandArr.length !== 3) {
   console.error(
@@ -28,7 +29,7 @@ if (commandArr.length !== 3) {
 
 try {
   if (isNaN(numOne) || isNaN(numTwo)) {
-    throw new Error("One is not a valid number, please try again!");
+    throw new Error("Not a valid number, please try again!");
   }
   // console.log(`type of: ` + typeof numTwo);
 
@@ -38,8 +39,7 @@ try {
   // which operator is it?
   result = arithmetics[operator](numOne, numTwo);
   // answer according to operator
-  console.log(`answer: ${result}`);
-  // meow
+  console.log(`answer: ${result.toFixed(2)}`);
 } catch (error) {
   console.error(error.message);
 }
@@ -51,7 +51,7 @@ function multiply(num1, num2) {
   return result;
 }
 function divide(num1, num2) {
-  if (num1 == 0 || num2 == 0) {
+  if (num2 == 0) {
     return "cannot divide by zero";
   }
   result = num1 / num2;
